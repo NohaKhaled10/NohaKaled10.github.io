@@ -1,0 +1,69 @@
+/*start editing on vertical navbar*/
+.about,.about:hover,.about:visited
+{
+     text-align: center;
+     padding-left: 110px;
+    line-height:10px;
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+    color: #FFC300;
+    text-decoration: underline;
+}
+.about:hover:before { visibility: hidden;}
+.project,.project:visited,.service
+{
+    padding-left: 110px;
+    line-height:10px;
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    position: relative;
+}
+.project:before
+{
+     content: "";
+  position: absolute;
+  width: 70px;
+  height: 2px;
+  bottom: -5px;
+  left: 20;
+  background-color: #FFC300;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.project:hover:before { visibility: visible; -webkit-transform: scaleX(1); transform: scaleX(1);  }
+.project:hover{ color:white; text-decoration: none; }
+/*end editing on vertical navbar*/
+
+.welcome,.spa,.we,.one,.two,.three,.emptef{ position: absolute; top: 50px;}
+.spa{top: 0px;}
+.we{top: 40px;}
+.one,.two,.three{top:445px;}
+.history{position: absolute;left:340px;top: 710px;}
+.histo{font-family: 'ABeeZee', sans-serif;font-weight:lighter;letter-spacing: 4px;font-size: 20px;}
+.emptef{left:-1px;top:35px;width: 75px;height: 4px;background-color: #FFC300;}
+.warned{position: absolute; left:-1px;width: 500px;font-size: 17px;opacity: 0.6;font-family: 'Quattrocento', serif;line-height:24px;}
+#accordion{position: absolute; left:330px;width: 650px;top: 8px; border: none;}
+.pd1,.pd2,.pd3{font-family: 'Quattrocento', serif;font-size: 17px;opacity: 0.6;}
+.pd1{column-count: 2;height: 160px;}
+.pd2{height: 210px;}
+.pd2 ul{position: absolute; left:60px;}
+.pd3{height: 130px;}
+.panel-title a{text-decoration: none;}
+.fa-arrow-down,.fa-arrow-up{text-align: right;float: right;padding-top:5px;}
+.panel-heading.active {background-color: black;color: white;}
+.parallax-window { top: 1170px;}
+.Touch{top:1570px;}
+
+
+
+
+
+
+
+
+

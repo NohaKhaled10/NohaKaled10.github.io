@@ -1,0 +1,120 @@
+/*vertical navbar*/
+*
+{
+    margin: 0;
+    padding:0 ;
+    box-sizing: border-box;
+}
+.menu
+{
+    background-color: #2C2C2C;
+    width: 285px;
+    height: 662px;
+    margin-left: -98px;
+    position: fixed;
+    z-index: 100000000;
+}
+.balay,.balay:hover
+{
+    color: white;
+    padding-left: 90px;
+    font-family: "Quicksand", Arial, sans-serif;
+    font-size:25px ;
+    text-decoration: none;
+}
+.project,.about,.service,.blog,.contact
+{
+    padding-left: 110px;
+    line-height:10px;
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    position: relative;
+}
+.project:before,.about:before,.service:before,.blog:before,.contact:before
+{
+     content: "";
+  position: absolute;
+  width: 70px;
+  height: 2px;
+  bottom: -5px;
+  left: 20;
+  background-color: #FFC300;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.project:hover:before,.about:hover:before,.service:hover:before,.blog:hover:before,.contact:hover:before
+{
+   visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);  
+}
+.project:hover,.about:hover,.service:hover,.blog:hover,.contact:hover{
+    
+    color:white;
+ text-decoration: none;
+}
+.under
+{
+     color: rgba(255, 255, 255, 0.3);
+    font-family: 'Merriweather', serif;
+    text-align: center;    
+}
+.home,.home:hover,.home:visited
+{
+     text-align: center;
+     padding-left: 110px;
+    line-height:10px;
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+    color: #FFC300;
+    text-decoration: underline;
+}
+.demo,.f:hover,.i:hover,.t:hover,.l:hover{color:#FFC300;}
+.icons{
+    color: rgba(255, 255, 255, 0.5);
+   text-align: center;
+    word-spacing: 10px;
+    font-size: 25px;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    background-color: #2C2C2C;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 45px;
+    color:#FFC300;
+    text-decoration: none;
+}
+.solution
+{
+    position: absolute;
+    top:7px;
+    left:20px;
+}
+@media screen and (max-height: 525px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+    @media screen and (min-width: 850px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+      .sidenav,  .solution{display: none;}
+}
+     @media screen and (max-width: 849px) {
+        .menu{display: none;}
+}

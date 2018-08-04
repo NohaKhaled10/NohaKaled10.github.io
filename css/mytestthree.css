@@ -1,0 +1,78 @@
+.recent, .REC{bottom: -578px;}
+/*start editing on vertical navbar*/
+.project,.project:hover,.project:visited
+{
+     text-align: center;
+     padding-left: 110px;
+    line-height:10px;
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+    color: #FFC300;
+    text-decoration: underline;
+}
+.project:hover:before { visibility: hidden;}
+.home,.home:visited,.about
+{
+    padding-left: 110px;
+    line-height:10px;
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    position: relative;
+}
+/*.home:visited{color: rgba(255, 255, 255, 0.5);}*/
+.home:before
+{
+     content: "";
+  position: absolute;
+  width: 70px;
+  height: 2px;
+  bottom: -5px;
+  left: 20;
+  background-color: #FFC300;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.home:hover:before { visibility: visible; -webkit-transform: scaleX(1); transform: scaleX(1);  }
+.home:hover{ color:white; text-decoration: none; }
+.recent { position: absolute; top: 30px; left: 320px;}
+/*end editing on vertical navbar*/
+.work{top: 30px;}
+.REC{top: 66px;}
+.empt{top: -205px;}
+.finalim,.finalis,.finalit,.finalif,.finaliv,.finalix,.finalise,.finaliei,.finalini,.finalite,.backo { position: absolute; left: 5px; top: 180px; width: 480px;}
+.finalis,.finalit,.finalix,.finalini,.finalite { left: 500px; width: 245px; height: 300px;}
+.finalit,.finalite{left: 760px;}
+.finalif,.finaliv,.finalix,.finalise,.finaliei { top: 505px; width: 230px; height: 300px;}
+.finaliv,.finaliei{left: 255px;  }
+.finalix{width: 510px;bottom: -750px;}
+.finalise,.finaliei,.finalini,.finalite{ top:830px;}
+.backo { width: 460px;}
+.backt,.backr{ left: 500px; top: 176px; }
+.backr{left: 760px;}
+.backf,.backv,.backx,.backse,.backei,.backni,.backte { width: 210px; height: 285px; left: 3px; top: 503px;}
+.backse,.backei,.backni,.backte{top:827px;}
+.backv,.backei{left:255px;}
+.backni,.backx{left:500px;width:225px;}
+.backx{width:490px;}
+.backte{left:765px;width:215px;}
+.Touch{top:1500px;}
+.pagination { position: absolute; left:330px; top:1250px;font-size: 22px;}
+.pagination > li > a, .pagination > li > span  { color: rgba(0,0,0,0.6); border: 1px solid rgba(0,0,0,0.4); }
+.pagination > li > a:hover, .pagination > li > span:hover{ color: white;background-color:#FFC300 ;}
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > li > a:focus, .pagination > li > span:focus{ color: white;background-color:#FFC300 ;  border: none;}
+.pagination > li> a, .pagination > li > span{border-color: rgba(0,0,0,0.2);}
+.pagination > li> a{ margin: 0 4px;border-radius: 2px;}
+
+
+
+
+
+
+
+
+
